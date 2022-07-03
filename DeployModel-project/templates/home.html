@@ -1,0 +1,560 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Load the static file for css -->
+    <!-- {% load static %} -->
+    <link rel="stylesheet" href="static\diabetes\css\aos.min.css">
+    <link rel="stylesheet" href="static\diabetes\css\bootstrap.min.css">
+    <link rel="stylesheet" href="static\diabetes\css\fontawesome-all.min.css">
+    <link rel="stylesheet" href="static\diabetes\css\style.css">
+    <link rel="stylesheet" href="static\diabetes\css\swiper.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Your description">
+    <meta name="author" content="Your name">
+    <meta property="og:site_name" content="" /> 
+	<meta property="og:site" content="" /> 
+	<meta property="og:title" content=""/> 
+	<meta property="og:description" content="" /> 
+	<meta property="og:image" content="" /> 
+	<meta property="og:url" content="" /> 
+	<meta name="twitter:card" content="summary_large_image">
+
+    
+
+    <!-- Webpage Title -->
+    <title>Diabetes Predictor</title>
+
+    <!-- Styles -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet"> 
+    <!-- <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link href="./css/fontawesome-all.min.css" rel="stylesheet">
+    <link href="./css/aos.min.css" rel="stylesheet">
+    <link href="./css/swiper.css" rel="stylesheet">
+    <link href="./css/style.css" rel="stylesheet"> -->
+
+    <!-- Favicon -->
+    <link rel="icon" href="{%static 'diabetes/images/glucosemeter.png'%}">
+</head>
+<body>
+    
+    <!-- Navigation -->
+    <nav id="navbar" class="navbar navbar-expand-lg fixed-top navbar-dark" aria-label="Main navigation">
+        <div class="container">
+
+            
+            <a class="navbar-brand logo-text" href="{% url 'home'%}">Diabetes Predictor</a>
+
+            <button class="navbar-toggler p-0 border-0" type="button" id="navbarSideCollapse" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault" >
+                <ul class="navbar-nav ms-auto navbar-nav-scroll">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#header">Home</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li> -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">News</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#plans">Predict</a>
+                    </li>
+                    <!-- <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="dropdown01" data-bs-toggle="dropdown" aria-expanded="false" href="#">Drop</a>
+                        
+                        <ul class="dropdown-menu" aria-labelledby="dropdown01">
+                            <li><a class="dropdown-item" href="#article.html">Article Details</a></li>
+                            <li><div class="dropdown-divider"></div></li> -->
+                            <!-- <li><a class="dropdown-item" href="#terms.html">Terms Conditions</a></li>
+                            <li><div class="dropdown-divider"></div></li>
+                            <li><a class="dropdown-item" href="#privacy.html">Privacy Policy</a></li> -->
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+                <span class="nav-item social-icons">
+                    <span class="fa-stack">
+                        <a href="https://www.facebook.com/sagarhospitalsindia">
+                            <i class="fas fa-circle fa-stack-2x"></i>
+                            <i class="fab fa-facebook-f fa-stack-1x"></i>
+                        </a>
+                    </span>
+                    <span class="fa-stack">
+                        <a href="https://twitter.com/SAGARHOSPITALS?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">
+                            <i class="fas fa-circle fa-stack-2x"></i>
+                            <i class="fab fa-twitter fa-stack-1x"></i>
+                        </a>
+                    </span>
+                    <span class="fa-stack">
+                        <a href="https://twitter.com/SAGARHOSPITALS?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">
+                            <i class="fas fa-circle fa-stack-2x"></i>
+                            <i class="fab fa-instagram fa-stack-1x"></i>
+                        </a>
+                    </span>
+                </span>
+            </div>
+        </div>
+    </nav> 
+   
+
+
+    <!-- Home -->
+    <section class="home py-5 d-flex align-items-center" id="header">
+        <div class="container text-light py-5"  data-aos="fade-right"> 
+            <h1 class="headline">What is <span class="home_text">Diabetes?</span></h1>
+            <p class="para para-light py-3">Diabetes is a chronic disease that occurs when the pancreas is no longer able to make insulin, or when the body cannot make good use of the insulin it produces.A group of diseases that result in too much sugar in the blood (high blood glucose).</p>
+            <div class="my-3">
+                <a class="btn" href="#plans">Predict</a>
+            </div>
+        </div> 
+    </section> 
+
+
+    <!-- Information -->
+    <section class="information">
+        <div class="container-fluid">  
+            <div class="row text-light">
+                <div class="col-lg-4 text-center p-5" data-aos="zoom-in">
+                    
+                    
+                    <h4 class="py-3">Type 1 Diabetes</h4>
+                    <p class="para-light">Type 1 diabetes is thought to be caused by an autoimmune reaction (the body attacks itself by mistake) that stops your body from making insulin.It’s usually diagnosed in children, teens, and young adults.Approximately 5-10% of the people who have diabetes have type 1.If you have type 1 diabetes, you’ll need to take insulin every day to survive. Currently, no one knows how to prevent type 1 diabetes. </p>
+                </div>
+                <div class="col-lg-4 text-center p-5"  data-aos="zoom-in">
+                    
+                    <h4 class="py-3">Type 2 Diabetes</h4>
+                    <p class="para-light">With type 2 diabetes, your body doesn’t use insulin well and can’t keep blood sugar at normal levels. It develops over many years and is usually diagnosed in adults.About 90-95% of people with diabetes have type 2.Type 2 diabetes can be prevented or delayed with healthy lifestyle changes, such as losing weight, eating healthy food, and being active.</p>
+                </div>
+                <div class="col-lg-4 text-center p-5 text-dark"  data-aos="zoom-in"> 
+                    
+                    <h4 class="py-3">Gestational Diabetes </h4>
+                    <p class="para-light">Gestational diabetes develops in pregnant women who have never had diabetes. If you have gestational diabetes, your baby could be at higher risk for health problems. Gestational diabetes usually goes away after your baby is born but increases your risk for type 2 diabetes later in life. Your baby is more likely to have obesity as a child or teen, and more likely to develop type 2 diabetes later in life too.</p>
+                </div>
+            </div>
+        </div> 
+    </section> 
+        </div> 
+    </section> 
+
+
+    <!-- Services -->
+    <section class="services d-flex align-items-center py-5" id="services">
+        <div class="container text-light">
+            <div class="text-center pb-4" >
+                <p>NEWS</p> 
+                <h2 class="py-2">Explore more about Diabetes</h2>
+                <p class="para-light">--------------------------------------------</p>
+            </div>
+            <div class="row gy-4 py-2" data-aos="zoom-in">
+                <div class="col-lg-4">
+                    <div class="card bg-transparent">
+                        <!-- <i class="fas fa-home fa-2x"></i> -->
+                        <h4 class="py-2">Diabetes Risk Factors</h4>
+                        
+                        <a href="https://www.cdc.gov/diabetes/basics/risk-factors.html">click here</a>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card bg-transparent">
+                        <!-- <i class="fas fa-wifi fa-2x"></i> -->
+                        <h4 class="py-2">Diabetes Symptoms</h4>
+                        
+                        <a href="https://www.cdc.gov/diabetes/basics/symptoms.html">click here</a>
+                    </div>                    
+                </div>
+                <div class="col-lg-4">
+                    <div class="card bg-transparent">
+                        <!-- <i class="fas fa-phone fa-2x"></i> -->
+                        <h4 class="py-2">Diabetes Tests</h4>
+                        
+                        <a href="https://www.cdc.gov/diabetes/basics/getting-tested.html">click here</a>
+                    </div>                    
+                </div>
+                <div class="col-lg-4">
+                    <div class="card bg-transparent">
+                        <!-- <i class="fas fa-mobile fa-2x"></i> -->
+                        <h4 class="py-2">Living With Diabetes</h4>
+                        <a href="https://www.cdc.gov/diabetes/managing/index.html">click here</a>
+                        
+                    </div>                    
+                </div>
+                <div class="col-lg-4">
+                    <div class="card bg-transparent">
+                        <!-- <i class="fas fa-home fa-2x"></i> -->
+                        <h4 class="py-2">Data and Statistics</h4>
+                        <a href="https://www.cdc.gov/diabetes/data/index.html">click here</a>
+                        
+                    </div>                    
+                </div>
+                <div class="col-lg-4">
+                    <div class="card bg-transparent">
+                        <!-- <i class="fas fa-tv fa-2x"></i> -->
+                        <h4 class="py-2">Awareness Campaigns</h4>
+                        <a href="https://www.cdc.gov/diabetes/campaigns/index.html">click here</a>
+                    </div>                    
+                </div>
+            </div> 
+        </div> 
+    </section> 
+
+
+    <!-- Plans -->
+    <section class="plans d-flex align-items-center py-5 " id="plans">
+        <div class="container text-light" >
+            <div class="text-center pb-4">
+                <p class="center2">Sagar Hospitals</p>
+                <h2 class="py-2 center2">DIABETES PREDICTION</h2>
+                </div>
+            <div class="row gy-4" data-aos="zoom-in">
+                <div class="col-lg-4 center" >
+                    <div class="ml-container">
+                        <form action = "{% url 'result' %} " method = "POST">
+                            
+                         <!-- <div class=" align-left" >Pregnancies</div>    -->
+                         Pregnancies : <input class="form-input" type="text" name="pregnancies" required placeholder=""><br></br>
+                         <!-- <div class="align-left">Glucose</div>    -->
+                         Glucose : <input class="form-input" type="text" name="glucose" required placeholder=""><br></br>
+                         <!-- <div class=" align-left">BloodPressure</div>    -->
+                         BloodPressure : <input class="form-input" type="text" name="bloodpressure" required placeholder=""><br></br>
+                         <!-- <div class=" align-left">SkinThickness</div>    -->
+                         SkinThickness : <input class="form-input" type="text" name="skinthickness" required placeholder=""><br></br>
+                         <!-- <div class=" align-left">Insulin</div>   -->
+                         Insulin : <input class="form-input" type="text" name="insulin" required placeholder=""><br></br>
+                         <!-- <div class=" align-left">BMI</div>    -->
+                         BMI : <input class="form-input" type="text" name="bmi" required placeholder=""><br></br>
+                         <!-- <div class=" align-left">Diabetes pedigree function</div>  -->
+                         Diabetes pedigree function : <input class="form-input" type="text" required name="dpf" placeholder=""><br></br>
+                         <!-- <div class=" align-left">Age(years)</div>   -->
+                         Age(years) : <input class="form-input" type="text" name="age" required placeholder=""><br></br>
+                        <br>
+                             <div class="center1"><input type="submit" class="my-cta-button" required value="Predict" ></div>
+                             <!-- <div class="center1">
+                                <button type="submit" class="my-cta-button" onclick="openPopup()">Submit</button>
+                            </div>
+                             <div class="popup" id="popup">
+                                <img src="tick.png">
+                                <p>You have Diabetes.</p>
+                                <button type="button" onclick="closePopup()">OK</button>
+                            </div> 
+                             -->
+                            
+                        </form>
+                        <br>
+
+                        <!-- <h1>The results are : {{result}}</h1> -->
+                        
+                        
+                    </div><br>
+                  <br>
+                </div>
+
+            </div> 
+        </div> 
+    </section> 
+
+
+
+    <!-- Testimonials -->
+    <div class="slider-1 testimonial text-light d-flex align-items-center">
+        <div class="container">
+            <div class="row">
+                <div class="text-center w-lg-75 m-auto pb-4">
+                    <p>TESTIMONIALS</p>
+                    <h2 class="py-2">What Patient Says?</h2>
+                    <p class="para-light">"Life is not merely to be alive, but to be well."</p>
+                </div>
+            </div> <!-- end of row -->
+            <div class="row p-2" data-aos="zoom-in">
+                <div class="col-lg-12">
+
+                    <!-- Card Slider -->
+                    <div class="slider-container">
+                        <div class="swiper-container card-slider">
+                            <div class="swiper-wrapper">
+                                
+                                <!-- Slide -->
+                                <div class="swiper-slide">
+                                    <div class="testimonial-card p-4">
+                                        <p>"Trying to manage diabetes is hard because if you don't, there are consequences you'll have to deal with later in life."</p>
+                                    
+                                        <div class="d-flex pt-4">
+                                            <div>
+                                                <img class="avatar" src="static\diabetes\images\testimonial-1.jpg" alt="testimonial">
+                                            </div>
+                                            <div class="ms-3 pt-2">
+                                                <h6>Marlene Visconte</h6>
+                                                <p>General Manager</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> 
+                               
+        
+                                <!-- Slide -->
+                                <div class="swiper-slide">
+                                    <div class="testimonial-card p-4">
+                                        <p>"'When it comes to eating right and exercising, there is no 'I'll start tomorrow.' Tomorrow is disease."</p>
+                                        <div class="d-flex pt-4">
+                                            <div>
+                                                <img class="avatar" src="static\diabetes\images\testimonial-2.jpg" alt="testimonial">
+                                            </div>
+                                            <div class="ms-3 pt-2">
+                                                <h6>John Spiker</h6>
+                                                <p>Team Leader</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> 
+                                
+        
+                                <!-- Slide -->
+                                <div class="swiper-slide">
+                                    <div class="testimonial-card p-4">
+                                        <p>"Diabetes is a great example whereby, giving the patient the tools, you can manage yourself very well."</p>
+                                        <div class="d-flex pt-4">
+                                            <div>
+                                                <img class="avatar" src="static\diabetes\images\testimonial-3.jpg" alt="testimonial">
+                                            </div>
+                                            <div class="ms-3 pt-2">
+                                                <h6>Stella Virtuoso</h6>
+                                                <p>Design Chief </p>
+                                            </div>
+                                        </div>
+                                    </div>      
+                                </div> 
+                                
+        
+                                <!-- Slide -->
+                                <div class="swiper-slide">
+                                    <div class="testimonial-card p-4">
+                                        <p>"Many a diabetic has stayed alive by stealing the bread denied him by his doctor."</p>
+                                        <div class="d-flex pt-4">
+                                            <div>
+                                                <img class="avatar" src="static\diabetes\images\testimonial-4.jpg" alt="testimonial">
+                                            </div>
+                                            <div class="ms-3 pt-2">
+                                                <p>Mike tim</p>
+                                                <p>Investor - TechGroww</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> 
+                                
+
+                            </div> 
+        
+                            <!-- Add Arrows -->
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                        
+                               </div> 
+                    </div> 
+                </div> 
+            </div> 
+        </div> 
+    </div> 
+
+
+    <!-- Newsletter -->
+    <section class="newsletter text-light py-5">
+        <div class="container">
+            <div class="row" >
+                <div class="col-lg-6 text-center text-lg-start" data-aos="fade-right">
+                    <h4 class="py-1">Subscribe to our Newsletter</h4>
+                    <p class="para-light">Get latest updates on Diabetes and It's Treatements.</p>
+                </div>
+                <div class="col-lg-6 d-flex align-items-center" data-aos="fade-down">
+                    <div class="input-group my-3">
+                        <input type="text" class="form-control p-2" placeholder="Enter your email address" aria-label="Recipient's email">
+                        <button class="btn-secondary text-light" type="button">Subscribe</button>
+                    </div>
+                </div>
+            </div> 
+        </div> 
+    </section> 
+
+
+    <!-- Contact -->
+    <section class="contact d-flex align-items-center py-5" id="contact">
+        <div class="container-fluid text-light">
+            <div class="row">
+                <div class="col-lg-6 d-flex justify-content-center justify-content-lg-end align-items-center px-lg-5" data-aos="fade-right">
+                    <div style="width:90%">
+                        <div class="text-center text-lg-start py-4 pt-lg-0">
+                            <p>CONTACT</p>
+                            <h2 class="py-2">Send your query</h2>
+                            <p class="para-light">send your feedback</p>
+                        </div>
+                        <div>
+                            <div class="row" >
+                                <div class="col-lg-6">
+                                    <div class="form-group py-2">
+                                        <input type="text" class="form-control form-control-input" id="exampleFormControlInput1" placeholder="Enter name">
+                                    </div>                                
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="form-group py-2">
+                                        <input type="email" class="form-control form-control-input" id="exampleFormControlInput2" placeholder="Enter phone number">
+                                    </div>                                 
+                                </div>
+                            </div>
+                            <div class="form-group py-1">
+                                <input type="email" class="form-control form-control-input" id="exampleFormControlInput3" placeholder="Enter email">
+                            </div>  
+                            <div class="form-group py-2">
+                                <textarea class="form-control form-control-input" id="exampleFormControlTextarea1" rows="6" placeholder="Message"></textarea>
+                            </div>                            
+                        </div>
+                        <div class="my-3">
+                            <a class="btn form-control-submit-button" href="#your-link">Submit</a>
+                        </div>
+                    </div> 
+                </div> 
+                <div class="col-lg-6 d-flex align-items-center" data-aos="fade-down">
+                    <!-- <img class="img-fluid d-none d-lg-block" src="./assets/images/contact.jpg" alt="contact">-->
+                    
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.683712972532!2d77.59742971430404!3d12.92803861933173!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae15aed36af035%3A0xe5759245267fbda3!2sSagar%20Hospitals!5e0!3m2!1sen!2sin!4v1653572841463!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>                      
+                </div> 
+            </div> 
+        </div> 
+    </section> 
+
+
+    <!-- Location -->
+    <section class="location text-light py-5">
+        <div class="container" data-aos="zoom-in">
+            <div class="row">
+                <div class="col-lg-3 d-flex align-items-center">
+                    <div class="p-2"><i class="far fa-map fa-3x"></i></div>
+                    <div class="ms-2">
+                        <h6>ADDRESS</h6>
+                        <p>Sagar Hospitals,Bangalore</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 d-flex align-items-center" >
+                    <div class="p-2"><i class="fas fa-mobile-alt fa-3x"></i></div>
+                    <div class="ms-2">
+                        <h6>CALL FOR QUERY</h6>
+                        <p>(800) 265  216 2020</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 d-flex align-items-center" >
+                    <div class="p-2"><i class="far fa-envelope fa-3x"></i></div>
+                    <div class="ms-2">
+                        <h6>SEND US MESSAGE</h6>
+                        <p>sagarhospitalsindia@gmail.com</p>
+                    </div>
+                </div>
+
+            </div> 
+        </div> 
+    </section>
+
+
+    <!-- Footer -->
+    <section class="footer text-light">
+        <div class="container">
+            <div class="row" data-aos="fade-right">
+                <div class="col-lg-3 py-4 py-md-5">
+                    <div class="d-flex align-items-center">
+                        <h4 class="">Diabetes Predictor</h4>
+                    </div>
+                    <p class="py-3 para-light">Sagar hospitals Bangalore</p>
+                    <div class="d-flex">
+                        <div class="me-3">
+                            <a href="https://www.facebook.com/sagarhospitalsindia">
+                                <i class="fab fa-facebook-f fa-2x py-2"></i>
+                            </a>
+                        </div>
+                        <div class="me-3">
+                            <a href="https://twitter.com/SAGARHOSPITALS?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">
+                                <i class="fab fa-twitter fa-2x py-2"></i>
+                            </a>
+                        </div>
+                        <div class="me-3">
+                            <a href="https://www.instagram.com/sagarhospitalsindia/?hl=en">
+                                <i class="fab fa-instagram fa-2x py-2"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div> <!-- end of col -->
+
+                <div class="col-lg-3 py-4 py-md-5">
+                    <div>
+                        <h4 class="py-2">Quick Links</h4>
+                        <div class="d-flex align-items-center py-2">
+                            <i class="fas fa-caret-right"></i>
+                            <a href="#header"><p class="ms-3">Home</p></a>
+                        </div>
+                        <div class="d-flex align-items-center py-2">
+                            <i class="fas fa-caret-right"></i>
+                            <a href="#services"><p class="ms-3">News</p></a>
+                        </div>
+                        <div class="d-flex align-items-center py-2">
+                            <i class="fas fa-caret-right"></i>
+                            <a href="#plans"><p class="ms-3">Predict</p></a>
+                        </div>
+                        <div class="d-flex align-items-center py-2">
+                            <i class="fas fa-caret-right"></i>
+                            <a href="#contact"><p class="ms-3">Contact</p></a>
+                        </div>
+                    </div>
+                </div> <!-- end of col -->
+
+                
+
+                <div class="col-lg-3 py-4 py-md-5">
+                    <div class="d-flex align-items-center">
+                        <h4>Newsletter</h4>
+                    </div>
+                    <p class="py-3 para-light">Get Latest updates on Diabetes and Treatements.</p>
+                    <div class="d-flex align-items-center">
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control p-2" placeholder="Enter Email" aria-label="Recipient's email">
+                            <button class="btn-secondary text-light"><i class="fas fa-envelope fa-lg"></i></button>       
+                        </div>
+                    </div>
+                </div> 
+            </div>
+        </div>
+    </section> 
+
+
+    <!-- Bottom -->
+    
+ 
+    
+    <!-- Back To Top Button -->
+    <button onclick="topFunction()" id="myBtn">
+        <img src="static\diabetes\images\up-arrow.png" alt="alternative">
+    </button>
+    <!-- end of back to top button -->
+
+    
+    <!-- Scripts -->
+    <script src="{% static 'diabetes/javascript/bootstrap.min.js'%}"></script><!-- Bootstrap framework -->
+    <script src="{% static 'diabetes/javascript/purecounter.min.js'%}"></script> <!-- Purecounter counter for statistics numbers -->
+    <script src="{% static 'diabetes/javascript/swiper.min.js'%}"></script><!-- Swiper for image and text sliders -->
+    <script src="{% static 'diabetes/javascript/aos.js'%}"></script><!-- AOS on Animation Scroll -->
+    <script src="{% static 'diabetes/javascript/script.js'%}"></script>  <!-- Custom scripts -->
+    
+    <!-- <script>
+        let popup=document.getElementById("popup");
+        function openPopup(){
+            popup.classList.add("open-popup");
+
+        }
+        function openPopup(){
+            popup.classList.remove("open-popup");
+            
+        }
+    </script> -->
+</body>
+</html>

@@ -1,0 +1,70 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    
+    <meta name="description" content="Your description">
+    <meta name="author" content="Your name">
+
+   
+	<meta property="og:site_name" content="" /> 
+	<meta property="og:site" content="" /> 
+	<meta property="og:title" content=""/> 
+	<meta property="og:description" content="" /> 
+	<meta property="og:image" content="" /> 
+	<meta property="og:url" content="" /> 
+	<meta name="twitter:card" content="summary_large_image">
+
+    <!-- Webpage Title -->
+    <title>Diabetes Predictor</title>
+
+    <!-- Styles -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="static\diabetes\css\aos.min.css">
+    <link rel="stylesheet" href="static\diabetes\css\bootstrap.min.css">
+    <link rel="stylesheet" href="static\diabetes\css\fontawesome-all.min.css">
+    <link rel="stylesheet" href="static\diabetes\css\style.css">
+    <link rel="stylesheet" href="static\diabetes\css\swiper.css">
+
+    <!-- Favicon -->
+    <link rel="icon" src="static\diabetes\images\glucosemeter.png"/>
+</head>
+<body class="home">
+    
+    <!-- Navigation -->
+    <nav id="navbar" class="navbar navbar-expand-lg fixed-top navbar-dark" aria-label="Main navigation">
+        <div class="container">
+
+            
+            <a class="navbar-brand logo-text" href="{% url 'home' %}">Diabetes Predictor</a>
+
+            <button class="navbar-toggler p-0 border-0" type="button" id="navbarSideCollapse" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault" >
+                <ul class="navbar-nav ms-auto navbar-nav-scroll">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="{% url 'home' %}">Home</a>
+                    </li>
+                   
+                        </ul>
+                    </li>
+                    
+                </ul>
+                
+            </div>
+        </div>
+    </nav> 
+   <div class="result">
+    <img class = tick src="static\diabetes\images\tick.png">
+    <p class="r1">{{result}}</p>
+   </div>
+   <!-- <div class="back">
+   <a href="{% url 'home' %}"><button>Back</button></a>
+   </div> -->
+</body>
+</html>
